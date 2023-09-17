@@ -181,13 +181,7 @@ li.nav-item {
     transition: all ease-in 0.3s;
     padding-right: -6px;
 }
-/* .btn::before{
-    content: "";
-    display: none;
-     transform: scaleX(0);
-     transition: transform 0.1s ease;
-   
-} */
+
 .card_btn:hover{
     color: #000;
 }
@@ -206,6 +200,7 @@ li.nav-item {
 @media only screen and (max-width: 500px) {
     .navbar_section{
     height: 100vh;
+    
     }
     .nav_logo {
         display: block;
@@ -219,5 +214,9 @@ li.nav-item {
     }
     .navbar_menu{
         display: none
+    } 
+    .nav-container:hover{
+        transition: auto; /* Animation */
+        transform: scale(1.1);
     }
   }
