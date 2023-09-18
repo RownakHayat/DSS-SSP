@@ -214,6 +214,10 @@ input[type="text"], [type="password"] {
     font-size: 14px;
     font-weight: 400;
 }
+.footer-text{
+    font-size: 14px;
+    font-weight: 400;
+}
 
 @media only screen and (max-width: 600px) {
     .navbar_section{
@@ -240,4 +244,5 @@ input[type="text"], [type="password"] {
         transition: auto; /* Animation */
         transform: scale(1.1);
     }
+    
   }
