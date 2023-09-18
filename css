@@ -4,13 +4,13 @@
 }
 body{
     background-color:#F5FFF6;
-    
+    font-family: 'Inter', sans-serif;
 }
 
 .navbar_section{
     background-color: #00988F;
     position:sticky;
-    
+   
 }
 .nav-container {
     display: flex;
@@ -26,7 +26,7 @@ body{
 
 }
 .nav_logo .logo_img{
-    width: 80%;
+    width: 65%;
 }
 .nav_logo a:hover{
     color: #FFFF;
@@ -40,33 +40,32 @@ body{
     letter-spacing: 3%;
     line-height: 28px;
 }
-.navbar_menu{
+.navbar-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: row;
 }
-li.nav-item {
+/* li.nav-item {
     padding: 10px;
+} */
+ .navbar-nav .nav-link {
+    padding: 0.6rem 1rem;
 }
-.navbar-nav{
-    display: contents;
-}
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-}
-.nav-link {
+a.nav-link {
     font-size: 1.2rem;
     font-weight: 500;
     color: #FFFF;
     border-radius: 5px;
+    padding: 0.6rem 1rem;
 }
 .nav-link:hover {
     color: #fff;
     background-color:#00A59B;
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
 }
 /* information_section start */
+
 .card-body{
     padding: 0 !important;
 }
@@ -85,6 +84,7 @@ li.nav-item {
     font-size: 14px;
     color:#2B2B2B;
     line-height:20px;
+
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 .info-details::-webkit-scrollbar {
@@ -103,8 +103,8 @@ li.nav-item {
 }
 .card{
     padding: 0.9rem 2rem;
-    border: 1px solid;
-    border-color: #93f3ed;
+    border: 1px solid #B3E0DE;
+    background-color: #F9FFFA;
 }
 
 .info-content{
@@ -143,8 +143,8 @@ li.nav-item {
     font-weight: 400;
     background-color: #00988F;
     width: 100%;
-    padding: 7% 4%;
-    margin-bottom: 1rem;
+    padding: 5% 4%;
+    margin-bottom: 1.5rem;
 }
 .btn a{
     color: #FFFF;
@@ -181,14 +181,32 @@ li.nav-item {
     transition: all ease-in 0.3s;
     padding-right: -6px;
 }
-
-.card_btn:hover{
-    color: #000;
-}
 .btn-cctv{
     margin-top: 3%;
 }
 
+/* login */
+.login-form{
+    width: 100%;
+}
+.btn-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #00988F;
+    padding: 5% 4%;
+}
+.forms-inputs input{
+    width: 100%;
+    padding: .5rem 1.5rem;
+    outline: none;
+}
+input[type="text"], [type="password"] {
+    border: 1px solid #C9C9C9;
+    border-radius: 5px;
+}
 /* information_section end  */
 
 /* contact section start  */
@@ -197,10 +215,13 @@ li.nav-item {
     font-weight: 400;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .navbar_section{
     height: 100vh;
     
+    }
+    .row{
+        gap:2rem
     }
     .nav_logo {
         display: block;
