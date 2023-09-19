@@ -9,52 +9,51 @@ body{
 
 .navbar_section{
     background-color: #00988F;
-    position:sticky;
+
    
 }
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem 0;
-}
+
+
 .nav_logo{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 1rem;
-
+    /* gap: .5rem; */
 }
 .nav_logo .logo_img{
-    width: 65%;
+    width: 10%;
 }
 .nav_logo a:hover{
     color: #FFFF;
+}
+.nav-text{
+    width: 40%;
 }
 .navbar-brand{
     color: #FFFF;
     text-wrap: wrap;
     width: 270px;
-    font-size: 18px;
+    font-size: 100%;
     font-weight: 600;
     letter-spacing: 3%;
     line-height: 28px;
 }
 .navbar-nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 2rem;
+    /* gap: 2.5rem; */
     flex-direction: row;
 }
 /* li.nav-item {
     padding: 10px;
 } */
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
  .navbar-nav .nav-link {
     padding: 0.6rem 1rem;
 }
 a.nav-link {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     color: #FFFF;
     border-radius: 5px;
@@ -133,13 +132,13 @@ a.nav-link {
     display: block;
 }
 .card_btn {
-    margin-top: 25%;
+    margin-top: 38%;
 }
 
 .btn {
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 80%;
     font-weight: 400;
     background-color: #00988F;
     width: 100%;
@@ -148,8 +147,9 @@ a.nav-link {
 }
 .btn a{
     color: #FFFF;
+    font-size: 15px;
     text-decoration: none;
-    padding-left: 1.5rem;
+    padding-left: .5rem;
 }
 
 .btn:hover {
@@ -220,7 +220,7 @@ input[type="text"], [type="password"] {
 }
 
 @media only screen and (max-width: 600px) {
-    .navbar_section{
+    /* .navbar_section{
     height: 100vh;
     
     }
@@ -232,17 +232,17 @@ input[type="text"], [type="password"] {
         margin-top: 9.5rem;
     }
     .nav_logo .logo_img{
-        width: 50%;
+        width: 15%;
     }
     .nav-text{
         display: inline-flex;
     }
-    .navbar_menu{
+    /* .navbar_menu{
         display: none
-    } 
-    .nav-container:hover{
+    }  */
+    /* .nav-container:hover{
         transition: auto; /* Animation */
         transform: scale(1.1);
-    }
+    } */ 
     
   }
