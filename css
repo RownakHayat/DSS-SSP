@@ -39,21 +39,21 @@ body{
     line-height: 28px;
 }
 .navbar-nav {
-    /* gap: 2.5rem; */
+    gap: .9rem;
     flex-direction: row;
 }
 /* li.nav-item {
     padding: 10px;
 } */
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
 }
  .navbar-nav .nav-link {
     padding: 0.6rem 1rem;
 }
 a.nav-link {
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 500;
     color: #FFFF;
     border-radius: 5px;
