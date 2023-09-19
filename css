@@ -243,23 +243,6 @@ input[type="text"], [type="password"] {
     .navbar-brand {
         font-size: 7px;
         line-height: 0px;
-    }
-    /*
-    .logo-content{
-        text-align: center;
-        margin-left: 1rem;
-        margin-top: 12rem;
-    }
-    
-    .nav-text {
-        text-align: center;
-        align-items: center;
-        display: inline-flex;
-        width: 79%;
-    }
-    div#navbarNav {
-        margin-top: 1rem;
-    } */
-    
+    }  
     
   }
