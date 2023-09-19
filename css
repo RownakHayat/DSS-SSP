@@ -12,7 +12,9 @@ body{
 
    
 }
-
+.logo-content{
+    display: flex;
+}
 
 .nav_logo{
     display: flex;
@@ -220,29 +222,33 @@ input[type="text"], [type="password"] {
 }
 
 @media only screen and (max-width: 600px) {
-    /* .navbar_section{
+     .navbar_section{
     height: 100vh;
     
-    }
+    } 
     .row{
         gap:2rem
     }
-    .nav_logo {
-        display: block;
-        margin-top: 9.5rem;
-    }
     .nav_logo .logo_img{
-        width: 15%;
+        width: 40%;
     }
-    .nav-text{
+    .logo-content{
+        text-align: center;
+        margin-left: 1rem;
+        margin-top: 12rem;
+    }
+    
+    .nav-text {
+        text-align: center;
+        align-items: center;
         display: inline-flex;
+        width: 79%;
     }
-    /* .navbar_menu{
-        display: none
-    }  */
-    /* .nav-container:hover{
-        transition: auto; /* Animation */
-        transform: scale(1.1);
-    } */ 
+    div#navbarNav {
+        margin-top: -26rem;
+    }
+    button.navbar-toggler {
+        margin-top: -16rem;
+    }
     
   }
