@@ -222,16 +222,29 @@ input[type="text"], [type="password"] {
 }
 
 @media only screen and (max-width: 600px) {
-     .navbar_section{
+     /* .navbar_section{
     height: 100vh;
     
-    } 
+    }  */
     .row{
         gap:2rem
     }
-    .nav_logo .logo_img{
-        width: 40%;
+    .logo-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
+    .nav_logo .logo_img {
+        width: 15%;
+    }
+    .nav-text {
+        width: 33%;
+    }
+    .navbar-brand {
+        font-size: 7px;
+        line-height: 0px;
+    }
+    /*
     .logo-content{
         text-align: center;
         margin-left: 1rem;
@@ -245,10 +258,8 @@ input[type="text"], [type="password"] {
         width: 79%;
     }
     div#navbarNav {
-        margin-top: -26rem;
-    }
-    button.navbar-toggler {
-        margin-top: -16rem;
-    }
+        margin-top: 1rem;
+    } */
+    
     
   }
