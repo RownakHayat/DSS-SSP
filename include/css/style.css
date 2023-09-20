@@ -48,8 +48,8 @@ body{
     padding: 10px;
 } */
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: .5rem;
-    padding-left: .5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
 }
  .navbar-nav .nav-link {
     padding: 0.6rem 1rem;
@@ -145,7 +145,7 @@ a.nav-link {
     background-color: #00988F;
     width: 100%;
     padding: 5% 4%;
-    margin-bottom: 1.5rem;
+    margin-bottom: .5rem;
 }
 .btn a{
     color: #FFFF;
@@ -160,7 +160,7 @@ a.nav-link {
 
 .btn img{
     padding: 1rem;
-    background-image: url(/include/image/Ellipse\ 9.png); 
+    background-image: url(/include/image/Ellipse.png); 
     background-size: 95%;
     background-repeat: no-repeat;
 }
