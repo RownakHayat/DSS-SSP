@@ -6,7 +6,9 @@ body{
     background-color:#F5FFF6;
     font-family: 'Inter', sans-serif;
 }
-
+a.nav-link {
+    color: white;
+}
 .navbar_section{
     background-color: #00988F;
 
@@ -217,11 +219,11 @@ input[type="text"], [type="password"] {
 }
 .location{
     text-decoration: none;
-    color: black;
+    
 }
 .location:hover{
     text-decoration: none;
-    color: black;
+    
 }
 .callno{
     text-decoration: none;
