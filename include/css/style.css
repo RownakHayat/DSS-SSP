@@ -215,6 +215,17 @@ input[type="text"], [type="password"] {
     font-size: 14px;
     font-weight: 400;
 }
+.location{
+    text-decoration: none;
+    color: black;
+}
+.location:hover{
+    text-decoration: none;
+    color: black;
+}
+.callno{
+    text-decoration: none;
+}
 .footer-text{
     font-size: 14px;
     font-weight: 400;
