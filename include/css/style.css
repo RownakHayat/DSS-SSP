@@ -192,7 +192,8 @@ a.nav-link {
 .login-form{
     width: 100%;
 }
-.btn-login{
+.btn-login, .btn-back{
+    color: #FFF;
     display: flex;
     justify-content: center;
     align-items: center;

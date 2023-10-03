@@ -13,41 +13,50 @@
   </head>
   <body>
     <section class="navbar_section">
-       <div class="container">
-
+      <div class="container">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid hstac">
-           <div class="logo-content d-flex gap-3"> 
+            <div class="logo-content d-flex gap-3">
               <img
                 src="/include/image/Component.png"
                 alt="logo"
                 class="logo_img"
               />
               <a class="navbar-brand" href="#"
-                >Surveillance and Security for 85 <br> Sarkari Shishu Paribar
-                (SSP)</a> 
-            </div> 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: 1px solid white;">
+                >Surveillance and Security for 85 <br />
+                Sarkari Shishu Paribar (SSP)</a
+              >
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              style="border: 1px solid white"
+            >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="ms-auto collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              class="ms-auto collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
               <ul class="navbar-nav mb-2 ms-auto mb-lg-0 gap-4">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#"
-                    >Home</a
-                  >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#aboutus">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-                </ul>
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutus">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
-        </nav> 
+        </nav>
       </div>
     </section>
     <section class="information_section" id="aboutus">
@@ -174,10 +183,14 @@
                     </h5>
                   </div>
                 </div>
-                <div class="card_btn" id="card_btn">
-                  <button class="btn" id="btn-attend">
+                <div class="card_btn" id="card_btn_group">
+                  <button
+                    class="btn"
+                    id="btn-attend"
+                    onclick="document.getElementById('loginForm').style.display='block';document.getElementById('card_btn_group').style.display='none'; return false;"
+                  >
                     <a
-                      href="#"
+                      href="javasricpt:void(0):"
                       data-toggle="collapse"
                       href="#collapseLogin"
                       role="button"
@@ -193,7 +206,7 @@
                   </button>
 
                   <button class="btn btn-cctv">
-                    <a href="#">
+                    <a href="javasricpt:void(0):">
                       <img src="/include/image/Vector.png" alt="" />
                       CCTV Surveillance
                     </a>
@@ -202,10 +215,14 @@
                     ></span>
                   </button>
                 </div>
-                <div class="card_btn login-card d-none" id="loginForm">
+                <div
+                  class="card_btn login-card"
+                  style="display: none"
+                  id="loginForm"
+                >
                   <div class="login-form" id="formLigin">
                     <div class="form-data" v-if="!submitted">
-                      <div class="forms-inputs mb-4">
+                      <div class="forms-inputs mb-2">
                         <input
                           autocomplete="off"
                           placeholder="ID"
@@ -218,7 +235,7 @@
                           A valid email is required!
                         </div>
                       </div>
-                      <div class="forms-inputs mb-4">
+                      <div class="forms-inputs mb-2">
                         <input
                           autocomplete="off"
                           placeholder="Password"
@@ -232,11 +249,20 @@
                         </div>
                       </div>
                       <div class="">
+                        <form action="main.php" method="post">
+                          <input
+                            class="btn btn-back w-100"
+                            type="submit"
+                            value="Login"
+                          />
+                        </form>
                         <button
-                          v-on:click.stop.prevent="submit"
-                          class="btn btn-login w-100"
+                          id="back_home"
+                          class="btn btn-back w-100"
+                          type="button"
+                          onclick="document.getElementById('loginForm').style.display='none';document.getElementById('card_btn_group').style.display='block';  return false;"
                         >
-                          <a href="" class="text-center">Login</a>
+                          Back
                         </button>
                       </div>
                     </div>
@@ -258,13 +284,21 @@
             <p class="blockquote">
               Concerned Caretaker/Deputy Caretaker, Government Child Family -
               <br />
-             <a href="https://www.google.com/maps/@23.87473,90.3809831,3a,90y,279.87h,104.09t/data=!3m7!1e1!3m5!1s4bQIOvSp2b-OZpsDcGQYug!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D4bQIOvSp2b-OZpsDcGQYug%26cb_client%3Dsearch.gws-prod.gps%26w%3D211%26h%3D120%26yaw%3D268.59305%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656?entry=ttu" class="location">
-              33 Institute Bhaban, Road-15, Sector-12, Uttara,<br />
-              Dhaka-1230, Bangladesh 
-             </a><br />
-             <a href="callto:+8801844270558" class="callno">+8801844270558</a><br />
-              <a href="mailto:info@simecinstitute.edu.bd">info@simecinstitute.edu.bd</a><br />
-              <a href="mailto:reseach@simecinstitute.edu.bd">reseach@simecinstitute.edu.bd</a>
+              <a
+                href="https://www.google.com/maps/@23.87473,90.3809831,3a,90y,279.87h,104.09t/data=!3m7!1e1!3m5!1s4bQIOvSp2b-OZpsDcGQYug!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D4bQIOvSp2b-OZpsDcGQYug%26cb_client%3Dsearch.gws-prod.gps%26w%3D211%26h%3D120%26yaw%3D268.59305%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656?entry=ttu"
+                class="location"
+              >
+                33 Institute Bhaban, Road-15, Sector-12, Uttara,<br />
+                Dhaka-1230, Bangladesh </a
+              ><br />
+              <a href="callto:+8801844270558" class="callno">+8801844270558</a
+              ><br />
+              <a href="mailto:info@simecinstitute.edu.bd"
+                >info@simecinstitute.edu.bd</a
+              ><br />
+              <a href="mailto:reseach@simecinstitute.edu.bd"
+                >reseach@simecinstitute.edu.bd</a
+              >
             </p>
           </div>
         </div>
@@ -273,27 +307,38 @@
 
     <footer class="mt-4">
       <div class="footer-text text-center">
-        <p>Design and Development: <a href="https://simecsystem.com/" class="">SIMEC System Ltd.</a></p>
+        <p>
+          Design and Development:
+          <a href="https://simecsystem.com/" class="">SIMEC System Ltd.</a>
+        </p>
       </div>
     </footer>
     <!-- Optional JavaScript; choose one of the two! -->
     <script>
-      btn_attend = document.getElementById("card_btn");
-      loginForm = document.getElementById("loginForm");
-      btn_attend.onclick = function () {
-        btn_attend.classList.add("d-none");
-        loginForm.classList.remove("d-none");
-      };
+      // btn_attend = document.getElementById("card_btn_group");
+      // loginForm = document.getElementById("loginForm");
 
+      // btn_attend.onclick = function () {
+      //   btn_attend.classList.add("d-none");
+
+      //   loginForm.classList.remove("d-none");
+      // };
+
+      // btn_cancle = document.getElementById("card_btn_group");
+      // loginCancla = document.getElementById("back_home");
+      // btn_cancle.onclick = function () {
+      //   btn_cancle.classList.add("d-block");
+      //   loginCancla.classList.remove("d-none");
+      // };
+      // btn_attend = document.getElementById("card_btn_group");
       // loginForm.onclick = function(){
-      //   btn_attend.classList.remove("d-none");
-      //   loginForm.classList.add("d-none");
+      //   back_home.classList.remove("d-none");
+      //   btn_attend.classList.add("d-block");
       // }
     </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    
+
     <script src="./include/js/bootstrap.bundle.min.js"></script>
     <script src="./include/js/all.js"></script>
-
   </body>
 </html>
