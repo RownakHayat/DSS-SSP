@@ -218,6 +218,9 @@ input[type="text"], [type="password"] {
     font-size: 14px;
     font-weight: 400;
 }
+.map-icon{
+    width: 15px;
+}
 .location{
     text-decoration: none;
     
